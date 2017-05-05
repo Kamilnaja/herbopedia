@@ -1,10 +1,15 @@
-import { Component } from '@angular/core';
-
+import { Component, OnInit } from '@angular/core';
+import { HerbsService } from './herbs.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'app works!';
+export class AppComponent implements OnInit {
+  herbs = [];
+  constructor(private _herbService: HerbsService){}
+  ngOnInit() {
+    this._herbService.getHerbs()
+      .subscribe(resHerbsData => this.herbs = resHerbsData);
+  }
 }

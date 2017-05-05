@@ -1,3 +1,5 @@
 <h1>
-  {{title}}
+  <ul *ngFor = "let herb of herbs">
+    <li>{{herb.name}}</li>
+  </ul>
 </h1>
