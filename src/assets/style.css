@@ -3,24 +3,11 @@ body, html, * {
   font-family: sans-serif;
 }
 
-ul {
-  list-style: none;
-}
 
 .herbList {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-}
-
-@media (max-width: 420px) {
-  .herbList {
-    flex-direction: column;
-    margin-left: -30px;
-  }
-  .search-input {
-    margin-left: 10px;
-  }
 }
 
 .herbWrapper {
@@ -62,15 +49,13 @@ ul {
 }
 
 .search-input {
-  width: calc( 100% - 50px);
   height: 50px;
   border-bottom: 1px solid grey;
   border-top: none;
   border-left: none;
   border-right: none;
   font-size: 16px;
-  padding-left: 20px;
-  margin-bottom: 30px;
+  width: 100%;
 }
 /*todo add efekt jak na psach */
 /**/
@@ -87,4 +72,12 @@ ul {
 .modal-header > span {
   background-color: cornflowerblue;
   color: white;
+}
+.header {
+  background-color: cornflowerblue;
+  min-height: 50px;
+  color: white;
+
+}
+.header h2 {
 }

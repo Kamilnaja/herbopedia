@@ -17,6 +17,5 @@ export class AppComponent implements OnInit {
 
   onSelect(herb) {
     this.selectedHerb = herb;
-    console.log(this.selectedHerb, herb);
   }
 }
