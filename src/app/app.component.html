@@ -1,5 +1,10 @@
-<h1>
-  <ul *ngFor = "let herb of herbs">
-    <li>{{herb.name}}</li>
+<div>
+  <ul  class="herbList">
+    <li *ngFor="let herb of herbs; let i = index">
+      <div class="herbWrapper">
+        <span class="number">{{i}}</span><img src={{herb.img}}> {{herb.name}}
+      </div>
+    </li>
   </ul>
-</h1>
+</div>
+
