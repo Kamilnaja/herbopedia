@@ -1,10 +1,6 @@
-<div>
-  <ul  class="herbList">
-    <li *ngFor="let herb of herbs; let i = index">
-      <div class="herbWrapper">
-        <span class="number">{{i}}</span><img src={{herb.img}}> {{herb.name}}
-      </div>
-    </li>
-  </ul>
-</div>
-
+<input type="text">
+<ul class="herbList">
+  <li *ngFor="let herb of herbs; let i = index" class="herbWrapper">
+    <span class="number">{{i}}</span><img src={{herb.img}}> {{herb.name}}
+  </li>
+</ul>
