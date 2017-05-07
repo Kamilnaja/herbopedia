@@ -2,87 +2,84 @@
   {
     "id": 1,
     "name": "Melisa",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/M%C3%A9lisse_Feuilles_FR_2013b.jpg/800px-M%C3%A9lisse_Feuilles_FR_2013b.jpg",
+    "img": "assets/img/Mélisse_Feuilles_FR_2013b.jpg",
     "howWork": ["remove stress", "calms", "relieve pain"]
   },
   {
     "id": 2,
     "name": "Mięta",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Mint.jpg/1024px-Mint.jpg",
+    "img": "assets/img/1024px-Mint.jpg",
     "howWork": ["refresh", "soothing pain", "good for respiration"]
 
   },
   {
     "id": 3,
     "name": "łopian",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Tephritis_bardanae_on_burdock_-_Flickr_-_S._Rae.jpg/800px-Tephritis_bardanae_on_burdock_-_Flickr_-_S._Rae.jpg",
+    "img": "assets/img/burdock.jpg",
     "howWork": ["Good for hairs", "remove dandroof"]
   },
   {
     "id": 4,
     "name": "pokrzywa",
-    "img": "http://www.swiatkwiatow.pl/userfiles//image/gnojowka_z_pokrzyw2.jpg",
+    "img": "assets/img/pokrzywa.jpg",
     "howWork": ["Good for hairs", "remove dandroof", "contains many vitamins"]
 
   },
   {
     "id": 5,
     "name": "yerba mate",
-    "img" : "http://s.eatthis-cdn.com/media/images/ext/546767832/yerba-mate.jpg",
+    "img" : "assets/img/yerba-mate.jpg",
     "howWork": ["Gives energy", "good for obesity"]
 
   },
   {
     "id": 6,
     "name": "herbata",
-    "img" : "https://camellia5.azureedge.net/assets/standard/PAGE/17995/large/Sinensis%20Species%20AKA%20The%20Tea%20Plant.JPG",
+    "img" : "assets/img/Sinensis%20Species%20AKA%20The%20Tea%20Plant.JPG",
     "howWork": ["Refresh organizm", "removes stomach pain"]
-
-
   },
   {
     "id": 7,
     "name": "kawa",
-    "img" : "https://media.treehugger.com/assets/images/2015/02/WM-Leaves-Washing.jpg.650x0_q70_crop-smart.jpg",
+    "img" : "assets/img/WM-Leaves-Washing.jpg.650x0_q70_crop-smart.jpg",
     "howWork": ["Gives energy", "decreases apetite"]
-
   },
   {
     "id": 8,
     "name": "tymianek",
-    "img" : "http://cdn32.ogrod.smcloud.net/s/user_photos/thumbnails/55009_958fb37779ad05c4_1024x768_crop_rozmiar-niestandardowy.jpg",
+    "img" : "assets/img/55009_958fb37779ad05c4_1024x768_crop_rozmiar-niestandardowy.jpg",
     "howWork": ["Good for respiration", "Kills all germs"]
 
   },
   {
     "id": 9,
     "name": "Mniszek zwyczajny",
-    "img" : "http://www.poradnikzielarski.pl/uploads/Ziola_lecznicze/mniszek-lekarski.png",
+    "img" : "assets/img/mniszek-lekarski.png",
     "howWork": ["Good for stomach", "increases apetite"]
   },
   {
     "id": 11,
     "name": "Lepiężnik",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Petasites_albus_a1.jpg/250px-Petasites_albus_a1.jpg",
+    "img": "assets/img/250px-Petasites_albus_a1.jpg",
     "howWork": ["calming effect", "removes migrain"]
   },
   {
     "id": 12,
     "name": "Nawłoć",
-    "img" : "http://klaudynahebda.pl/wp-content/uploads/2013/09/goldenrodspider-1024x667.jpg",
+    "img" : "assets/img/goldenrodspider-1024x667.jpg",
     "howWork": ["Diuretic effects", "good for aches"]
 
   },
   {
     "id": 13,
     "name": "Rumianek",
-    "img" : "http://blog.wnaturzesila.pl/wp-content/uploads/2015/11/rumianek.jpg",
+    "img" : "assets/img/rumianek.jpg",
     "howWork": ["Calming effects", "good for stomach"]
   },
   {
     "id": 14,
     "name": "Babka lancetowata",
-    "img" : "http://warehouse1.indicia.org.uk/upload/Plantain%2C%20Ribwort%20%28Plantago%20lanceolata%29%20Old%20Fosse%20Sapcote%20SP%205030%209289%20%28taken%2011.7.2008%29.JPG",
+    "img" : "assets/img/babka.JPG",
     "howWork": ["Good for scratches and eaches"]
 
 
