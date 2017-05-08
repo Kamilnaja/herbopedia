@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, RouterModule, Routes  } from '@angular/core';
 import { HerbsService } from './herbs.service';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

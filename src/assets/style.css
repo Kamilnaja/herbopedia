@@ -57,19 +57,41 @@ body, html, * {
 
 .search-input {
   height: 50px;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid white;
   border-top: none;
   border-left: none;
   border-right: none;
   font-size: 16px;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.3);
+  max-width: 400px;
+  background-color: rgba(255, 255, 255, 0.1);
   color: #fff;
   padding-left: 15px;
 }
-
+/*from css tricks */
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: white;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: white;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: white;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: white;
+}
+@media(max-width: 535px) {
+  .herbList {
+    max-width: 252px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .herbList li {
+    margin-left: 0;
+  }
+}
 /*todo add efekt jak na psach */
-/**/
 .modal .modal-content {
   background-color: white;
 }
@@ -88,12 +110,34 @@ body, html, * {
   color: white;
 }
 
+.modal-body .herbImg {
+  max-width: 300px;
+  max-height: none;
+}
+
 .header {
   background-color: cornflowerblue;
   min-height: 50px;
   color: white;
-
 }
 
 .header h2 {
+}
+.main-menu > ul {
+  display: flex;
+  flex-flow: row;
+  float: right;
+  padding-top: 20px;
+}
+.main-menu > ul a {
+  color: white;
+  font-size: 16px;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+.main-menu > ul a:hover {
+  text-decoration: none;
+  color: azure;
+/*todo herbopedia wyżej*/
 }
