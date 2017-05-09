@@ -1,3 +1,5 @@
+/*typography */
+
 body, html, * {
   box-sizing: border-box;
   font-family: sans-serif;
@@ -17,7 +19,6 @@ body, html, * {
 }
 .herbList {
   margin-top: 20px;
-
 }
 .herbList li {
   display: inline-block;
@@ -36,7 +37,6 @@ body, html, * {
   max-height: 135px;
   color: white;
   position: relative;
-
 }
 
 .modal .herbImg {
@@ -121,8 +121,6 @@ body, html, * {
   color: white;
 }
 
-.header h2 {
-}
 .main-menu > ul {
   display: flex;
   flex-flow: row;
@@ -139,5 +137,8 @@ body, html, * {
 .main-menu > ul a:hover {
   text-decoration: none;
   color: azure;
-/*todo herbopedia wyżej*/
+}
+
+p {
+  color: white;
 }

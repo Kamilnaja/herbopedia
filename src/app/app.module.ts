@@ -5,18 +5,25 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { HerbsService } from './herbs.service';
 import { FilterPipe } from './filter.pipe';
+import { ContactComponent } from './contact/contact.component';
+import { routes } from './app-router';
+import { AuthorComponent } from './author/author.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FilterPipe
+    FilterPipe,
+    ContactComponent,
+    AuthorComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    routes
   ],
   providers: [HerbsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+//todo dodać router linki
