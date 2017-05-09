@@ -8,13 +8,15 @@ import { FilterPipe } from './filter.pipe';
 import { ContactComponent } from './contact/contact.component';
 import { routes } from './app-router';
 import { AuthorComponent } from './author/author.component';
+import { HerblistComponent } from './herblist/herblist.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FilterPipe,
     ContactComponent,
-    AuthorComponent
+    AuthorComponent,
+    HerblistComponent
   ],
   imports: [
     BrowserModule,

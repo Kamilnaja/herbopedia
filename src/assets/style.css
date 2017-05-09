@@ -138,7 +138,10 @@ body, html, * {
   text-decoration: none;
   color: azure;
 }
-
+/*typo*/
 p {
+  color: white;
+}
+ a h2{
   color: white;
 }
