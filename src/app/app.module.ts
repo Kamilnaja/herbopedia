@@ -28,4 +28,4 @@ import { HerblistComponent } from './herblist/herblist.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-//todo dodać router linki
+/* todo dodać animację */

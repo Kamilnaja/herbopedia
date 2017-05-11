@@ -1,0 +1,60 @@
+
+<div class="container-fluid">
+  <div class="searchbox">
+    <div class="row">
+      <div class="col-md-12">
+        <input type="text" name="filter" class="search-input form-controll" [(ngModel)]="term" placeholder="search">
+      </div>
+    </div>
+  </div>
+</div>
+<p class="info-box">W tej chwili w bazie znajduje się {{herbs.length}} ziół. Kliknij w któreś, by dowiedzieć się więcej.</p>
+
+<ul class="herbList list-unstyled">
+  <li
+    *ngFor="let herb of herbs | filter:term;
+    let i = index"
+    class="herbWrapper"
+    (click)="onSelect(herb)"
+    data-toggle="modal"
+    data-target="#myModal"
+    #myList
+  >
+    <img src={{herb.img}} class="herbImg img-responsive">
+    <span class="herbName">
+      {{herb.name}}
+    </span>
+    <span class="number">
+      #{{i + 1}}
+    </span>
+  </li>
+</ul>
+
+<div class="modal fade" tabindex="-1" role="dialog" id="myModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+          aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Szczegóły</h4>
+      </div>
+      <div class="modal-body" *ngIf="selectedHerb">
+        <img src={{selectedHerb.img}} class="herbImg">
+        <br>
+        <h2>{{selectedHerb.name}}</h2>
+        <ul>
+          <li
+            *ngFor="let property of selectedHerb.howWork"
+            class="list-unstyled">
+            {{property}}
+          </li>
+        </ul>
+        <p></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Zamknij</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!--todo dodać widok listy -->

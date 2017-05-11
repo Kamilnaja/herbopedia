@@ -3,10 +3,14 @@
 body, html, * {
   box-sizing: border-box;
   font-family: sans-serif;
+  padding: 0;
+  margin: 0;
 }
+
 .body {
   background-color: cornflowerblue;
 }
+
 .herbWrapper {
   height: 170px;
   max-width: 250px;
@@ -17,14 +21,17 @@ body, html, * {
   border-radius: 5px;
   cursor: pointer;
 }
+
 .herbList {
   margin-top: 20px;
 }
+
 .herbList li {
   display: inline-block;
   margin-left: 10px;
   overflow: hidden;
 }
+
 .herbName {
   display: inline-block;
   margin-top: 5px;
@@ -68,29 +75,36 @@ body, html, * {
   color: #fff;
   padding-left: 15px;
 }
+
 /*from css tricks */
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: white;
 }
+
 ::-moz-placeholder { /* Firefox 19+ */
   color: white;
 }
+
 :-ms-input-placeholder { /* IE 10+ */
   color: white;
 }
+
 :-moz-placeholder { /* Firefox 18- */
   color: white;
 }
-@media(max-width: 535px) {
+
+@media (max-width: 535px) {
   .herbList {
     max-width: 252px;
     margin-left: auto;
     margin-right: auto;
   }
+
   .herbList li {
     margin-left: 0;
   }
 }
+
 /*todo add efekt jak na psach */
 .modal .modal-content {
   background-color: white;
@@ -127,6 +141,7 @@ body, html, * {
   float: right;
   padding-top: 20px;
 }
+
 .main-menu > ul a {
   color: white;
   font-size: 16px;
@@ -134,14 +149,36 @@ body, html, * {
   text-transform: uppercase;
   transition: 0.3s ease;
 }
+
 .main-menu > ul a:hover {
   text-decoration: none;
   color: azure;
 }
+
 /*typo*/
 p {
   color: white;
 }
- a h2{
+
+a h2 {
   color: white;
+}
+
+.info-box {
+  width: 100%;
+  height: 50px;
+  color: white;
+  position: fixed;
+  bottom: -10px;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 10px 20px 0 20px;
+  background-color: darkorange;
+  z-index: 200;
+}
+
+.site-name {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
 }
