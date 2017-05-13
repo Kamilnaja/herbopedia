@@ -4,13 +4,16 @@ import { HerbsService } from '.././herbs.service';
 @Component({
   selector: 'app-herblist',
   templateUrl: './herblist.component.html',
-  styleUrls: ['./herblist.component.css']
 })
 export class HerblistComponent implements OnInit {
 
-  herbs = [];
+  herbs:any = [];
   selectedHerb;
+  isList = true;
   constructor(private _herbService: HerbsService){}
+
+  isClassVisible: false;
+
   ngOnInit() {
     this._herbService.getHerbs()
       .subscribe(resHerbsData => this.herbs = resHerbsData);
@@ -19,4 +22,9 @@ export class HerblistComponent implements OnInit {
   onSelect(herb) {
     this.selectedHerb = herb;
   }
+
+  toggleCSS () {
+    console.log(this.isList);
+  }
+
 }

@@ -94,6 +94,12 @@ body, html, * {
 }
 
 @media (max-width: 535px) {
+  .list-view {
+    .herbList {
+      max-width: 100%;
+      margin-left: 10px;
+    }
+  }
   .herbList {
     max-width: 252px;
     margin-left: auto;
@@ -106,6 +112,7 @@ body, html, * {
 }
 
 /*todo add efekt jak na psach */
+/*todo usunąć podkreślenie tekstu h1*/
 .modal .modal-content {
   background-color: white;
 }
@@ -177,8 +184,46 @@ a h2 {
   z-index: 200;
 }
 
-.site-name {
+.site-name a{
   color: white;
   text-transform: uppercase;
   font-weight: 600;
+  &:hover, &:active {
+    color: lightblue;
+    text-decoration: none;
+
+  }
+  &:focus {
+    color: lightblue;
+    text-decoration: none;
+  }
+
+}
+
+.list-view {
+  //todo - zmienić na herb-wrapper
+  .herbWrapper {
+    width: 95%;
+    max-width: 95%;
+    max-height: 50px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-bottom: 0;
+    padding-top: 10px;
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+    .herbName {
+      background-color: transparent;
+      color: white;
+      font-size: 16px;
+    }
+    .herbImg {
+      display: none;
+    }
+    .number {
+      background-color: transparent;
+      color: white;
+      font-size: 16px;
+    }
+  }
 }

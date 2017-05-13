@@ -1,0 +1,263 @@
+@charset "UTF-8";
+/*typography */
+/* line 3, ../sass/screen.scss */
+body, html, * {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 10, ../sass/screen.scss */
+.body {
+  background-color: cornflowerblue;
+}
+
+/* line 14, ../sass/screen.scss */
+.herbWrapper {
+  height: 170px;
+  max-width: 250px;
+  margin-bottom: 10px;
+  position: relative;
+  background-color: white;
+  padding-bottom: 25px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* line 25, ../sass/screen.scss */
+.herbList {
+  margin-top: 20px;
+}
+
+/* line 29, ../sass/screen.scss */
+.herbList li {
+  display: inline-block;
+  margin-left: 10px;
+  overflow: hidden;
+}
+
+/* line 35, ../sass/screen.scss */
+.herbName {
+  display: inline-block;
+  margin-top: 5px;
+  margin-left: 20px;
+  background-color: white;
+}
+
+/* line 42, ../sass/screen.scss */
+.herbImg {
+  width: 100%;
+  max-height: 135px;
+  color: white;
+  position: relative;
+}
+
+/* line 49, ../sass/screen.scss */
+.modal .herbImg {
+  max-width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 56, ../sass/screen.scss */
+.number {
+  display: inline-block;
+  margin-top: 5px;
+  color: cornflowerblue;
+  float: right;
+  margin-right: 20px;
+  background-color: white;
+}
+
+/* line 65, ../sass/screen.scss */
+.search-input {
+  height: 50px;
+  border-bottom: 1px solid white;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  font-size: 16px;
+  width: 100%;
+  max-width: 400px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  padding-left: 15px;
+}
+
+/*from css tricks */
+/* line 80, ../sass/screen.scss */
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: white;
+}
+
+/* line 84, ../sass/screen.scss */
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: white;
+}
+
+/* line 88, ../sass/screen.scss */
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: white;
+}
+
+/* line 92, ../sass/screen.scss */
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: white;
+}
+
+@media (max-width: 535px) {
+  /* line 98, ../sass/screen.scss */
+  .list-view .herbList {
+    max-width: 100%;
+    margin-left: 10px;
+  }
+
+  /* line 103, ../sass/screen.scss */
+  .herbList {
+    max-width: 252px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* line 109, ../sass/screen.scss */
+  .herbList li {
+    margin-left: 0;
+  }
+}
+/*todo add efekt jak na psach */
+/*todo usun─ů─ç podkre┼Ťlenie tekstu h1*/
+/* line 116, ../sass/screen.scss */
+.modal .modal-content {
+  background-color: white;
+}
+
+/* line 120, ../sass/screen.scss */
+.modal-header {
+  background-color: cornflowerblue;
+}
+
+/* line 124, ../sass/screen.scss */
+.modal-header > h4 {
+  background-color: cornflowerblue;
+  color: white;
+}
+
+/* line 129, ../sass/screen.scss */
+.modal-header > span {
+  background-color: cornflowerblue;
+  color: white;
+}
+
+/* line 134, ../sass/screen.scss */
+.modal-body .herbImg {
+  max-width: 300px;
+  max-height: none;
+}
+
+/* line 139, ../sass/screen.scss */
+.header {
+  background-color: cornflowerblue;
+  min-height: 50px;
+  color: white;
+}
+
+/* line 145, ../sass/screen.scss */
+.main-menu > ul {
+  display: flex;
+  flex-flow: row;
+  float: right;
+  padding-top: 20px;
+}
+
+/* line 152, ../sass/screen.scss */
+.main-menu > ul a {
+  color: white;
+  font-size: 16px;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+
+/* line 160, ../sass/screen.scss */
+.main-menu > ul a:hover {
+  text-decoration: none;
+  color: azure;
+}
+
+/*typo*/
+/* line 166, ../sass/screen.scss */
+p {
+  color: white;
+}
+
+/* line 170, ../sass/screen.scss */
+a h2 {
+  color: white;
+}
+
+/* line 174, ../sass/screen.scss */
+.info-box {
+  width: 100%;
+  height: 50px;
+  color: white;
+  position: fixed;
+  bottom: -10px;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 10px 20px 0 20px;
+  background-color: darkorange;
+  z-index: 200;
+}
+
+/* line 187, ../sass/screen.scss */
+.site-name a {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+/* line 191, ../sass/screen.scss */
+.site-name a:hover, .site-name a:active {
+  color: lightblue;
+  text-decoration: none;
+}
+/* line 196, ../sass/screen.scss */
+.site-name a:focus {
+  color: lightblue;
+  text-decoration: none;
+}
+
+/* line 205, ../sass/screen.scss */
+.list-view .herbWrapper {
+  width: 95%;
+  max-width: 95%;
+  max-height: 50px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-bottom: 0;
+  padding-top: 10px;
+}
+/* line 212, ../sass/screen.scss */
+.list-view .herbWrapper:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+/* line 215, ../sass/screen.scss */
+.list-view .herbWrapper .herbName {
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+}
+/* line 220, ../sass/screen.scss */
+.list-view .herbWrapper .herbImg {
+  display: none;
+}
+/* line 223, ../sass/screen.scss */
+.list-view .herbWrapper .number {
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+}

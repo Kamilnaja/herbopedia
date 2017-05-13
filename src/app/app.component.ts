@@ -7,7 +7,7 @@ import { HerbsService } from './herbs.service';
 })
 
 export class AppComponent implements OnInit {
-  herbs = [];
+  herbs:any = [];
   selectedHerb;
 
   constructor(private _herbService: HerbsService){}

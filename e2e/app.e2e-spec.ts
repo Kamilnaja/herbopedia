@@ -6,9 +6,4 @@ describe('herbs-app App', () => {
   beforeEach(() => {
     page = new HerbsAppPage();
   });
-
-  it('should display message saying app works', () => {
-    page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
-  });
 });
