@@ -20,10 +20,9 @@ app.get('/api/herbs', function (req, res, next) {
     });
 });
 
-app.get('*', (req, res) => {
+app.get('*', function (req, res) {
   res.sendFile(path.join(__dirname, 'dist/index.html'));
-})
-
+});
 
 app.post('/api/herbs', function (req, res, next) {
     var herb = new Herb ({
@@ -38,8 +37,6 @@ app.post('/api/herbs', function (req, res, next) {
         res.json(201, herb)
     });
 });
-
-
 
 app.listen(3000, function () {
    console.log('listen on ' + 3000);
