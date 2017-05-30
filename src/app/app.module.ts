@@ -22,7 +22,7 @@ import { HerblistComponent } from './herblist/herblist.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    routes
+    routes,
   ],
   providers: [HerbsService],
   bootstrap: [AppComponent]
