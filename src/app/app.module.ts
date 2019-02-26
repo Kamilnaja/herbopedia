@@ -9,16 +9,16 @@ import { ContactComponent } from './contact/contact.component';
 import { routes } from './app-router';
 import { AuthorComponent } from './author/author.component';
 import { HerblistComponent } from './herblist/herblist.component';
+import { HerblistModule } from './herblist/herblist.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FilterPipe,
     ContactComponent,
     AuthorComponent,
-    HerblistComponent
   ],
   imports: [
+    HerblistModule,
     BrowserModule,
     FormsModule,
     HttpModule,
@@ -28,4 +28,4 @@ import { HerblistComponent } from './herblist/herblist.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-/* todo dodać animację */
+/* todo add animation */

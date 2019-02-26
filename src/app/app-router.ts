@@ -1,8 +1,7 @@
 import { ModuleWithProviders } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { AppComponent } from './app.component';
-import { ContactComponent } from './contact/contact.component';
+import { RouterModule, Routes } from '@angular/router';
 import { AuthorComponent } from './author/author.component';
+import { ContactComponent } from './contact/contact.component';
 import { HerblistComponent } from './herblist/herblist.component';
 
 export const router: Routes = [
