@@ -1,31 +1,28 @@
-var express = require('express');
-var bodyParser = require('body-parser');
-var Herb = require('./models/herb');
-var path = require("path");
+const express = require('express');
+const bodyParser = require('body-parser');
+const Herb = require('./models/herb');
+const path = require("path");
+const port = 8080;
+const app = express();
 
-var app = express();
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'dist')));
 
-//check is data was properly readed
-
-//get Post model
-
 app.get('/api/herbs', function (req, res, next) {
-    Herb.find(function(err, herbs) {
+    Herb.find(function (err, herbs) {
         if (err) {
-            return next (err)
+            return next(err)
         }
         res.json(herbs)
     });
 });
 
 app.get('*', function (req, res) {
-  res.sendFile(path.join(__dirname, 'dist/index.html'));
+    res.sendFile(path.join(__dirname, 'dist/index.html'));
 });
 
 app.post('/api/herbs', function (req, res, next) {
-    var herb = new Herb ({
+    var herb = new Herb({
         name: req.body.name,
         latinname: req.body.latinname
     });
@@ -38,6 +35,6 @@ app.post('/api/herbs', function (req, res, next) {
     });
 });
 
-app.listen(3000, function () {
-   console.log('listen on ' + 3000);
+app.listen(port, function () {
+    console.log('listen on ' + port);
 });

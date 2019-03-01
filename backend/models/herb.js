@@ -1,5 +1,5 @@
-var db = require('../db');
-var Herb = db.model('Herb', {
+const db = require("../db");
+const Herb = db.model('Herb', {
    name: { type: String, required: true },
    latinname: { type: String, required: false }
 });
