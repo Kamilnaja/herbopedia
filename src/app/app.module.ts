@@ -10,6 +10,8 @@ import { routes } from './app-router';
 import { AuthorComponent } from './author/author.component';
 import { HerblistComponent } from './herblist/herblist.component';
 import { HerblistModule } from './herblist/herblist.module';
+import { ModalComponent } from './modal/modal.component';
+import { InfoBoxComponent } from './info-box/info-box.component';
 
 @NgModule({
   declarations: [

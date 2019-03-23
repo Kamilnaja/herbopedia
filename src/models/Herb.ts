@@ -4,5 +4,6 @@ import { Injectable } from '@angular/core';
 export class Herb {
     img: string;
     name: string;
-    howWork: string[]
+    howWork: string[];
+    latinName: string;
 }

@@ -4,6 +4,8 @@ import { HerblistComponent } from './herblist.component';
 import { FormsModule } from '@angular/forms';
 import { HerbsService } from 'app/herbs.service';
 import { HttpModule } from '@angular/http';
+import { InfoBoxComponent } from 'app/info-box/info-box.component';
+import { ModalComponent } from 'app/modal/modal.component';
 
 describe('HerblistComponent', () => {
   let component: HerblistComponent;
@@ -11,8 +13,9 @@ describe('HerblistComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HerblistComponent ],
+      declarations: [ HerblistComponent, InfoBoxComponent, ModalComponent ],
       imports: [FormsModule, HttpModule],
+
       providers: [HerbsService]
     })
     .compileComponents();

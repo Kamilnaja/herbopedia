@@ -1,0 +1,8 @@
+<div class="info-box">
+  <p>W tej chwili w bazie znajduje się {{herbs?.length}} ziół. Kliknij w któreś, by dowiedzieć się
+    więcej.</p>
+  <div *ngFor="let herb of herbs">
+    {{herb.name}} |
+    {{herb.latinName}}
+  </div>
+</div>
