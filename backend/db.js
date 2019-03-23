@@ -1,13 +1,15 @@
-var mongoose = require('mongoose');
-var mongodbUrl = "mongodb://kamilnaja:5NZxGiw30S0gXn3Yo9D1@ds149511.mlab.com:49511/kamil_tasklist, [herbs]";
-mongoose.connect(mongodbUrl);
+const Herb = require('./models/herb');
 
-var conn = (mongoose.connection);
+// create herb json from herb objects
+const herb1 = new Herb('Rumianek', 'Matricaria chamomilla');
+const herb2 = new Herb('Len zwyczajny', 'Linum usitassum');
+const herb3 = new Herb('Łopian zwyczajny', 'Arctum Lappa');
+const herb4 = new Herb('Pokrzywa zwyczajna', 'Urtica dioica')
+const herbs = [];
 
-conn.on('error', console.error.bind(console, 'connection error'));
+herbs.push(herb1);
+herbs.push(herb2);
+herbs.push(herb3);
+herbs.push(herb4);
 
-conn.once('open', function () {
-
-});
-
-module.exports = mongoose;
+module.exports = herbs;

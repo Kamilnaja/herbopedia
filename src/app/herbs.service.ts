@@ -5,11 +5,12 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class HerbsService {
   private _url = 'api/herbs';
+  private port = 8080;
 
   constructor(private _http: Http) { }
 
   getHerbs() {
-    return this._http.get(this._url)
+    return this._http.get('http://localhost:8080/api/herbs')
       .map((response: Response) => response.json());
   }
 }

@@ -1,7 +1,6 @@
-const db = require("../db");
-const Herb = db.model('Herb', {
-   name: { type: String, required: true },
-   latinname: { type: String, required: false }
-});
-
-module.exports = Herb;
+module.exports = class Herb {
+  constructor(name, latinName){
+    this.name = name;
+    this.latinName = latinName;
+  }
+}

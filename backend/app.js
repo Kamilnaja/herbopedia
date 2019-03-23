@@ -1,9 +1,15 @@
-var express = require('express');
-var app = express ();
+const express = require('express');
+const herbs = require('./db');
+const app = express();
+const cors = require('cors');
+const port = 8080;
 
-app.get('/', function(req, res) {
-    var number = 200;
-    res.status(number).send("hello World");
-});
+app.use(cors({
+  origin: 'http://localhost:4200'
+}));
 
-app.listen(3000);
+app.get('/api/herbs', (req, res) => {
+  return res.json(herbs)
+})
+
+app.listen(port, () => console.log("app listening on port " + port))
