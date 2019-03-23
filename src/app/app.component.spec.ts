@@ -1,6 +1,9 @@
 import { TestBed, async } from '@angular/core/testing';
 
 import { AppComponent } from './app.component';
+import { RouterModule } from '@angular/router';
+import { HerbsService } from './herbs.service';
+import { HttpModule } from '@angular/http';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -8,6 +11,8 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent
       ],
+      imports: [RouterModule, HttpModule],
+      providers: [HerbsService]
     }).compileComponents();
   }));
 
