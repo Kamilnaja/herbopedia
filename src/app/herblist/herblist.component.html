@@ -2,7 +2,7 @@
   <div class="searchbox">
     <div class="row">
       <div class="col-md-12">
-        <input type="text" name="filter" class="search-input form-controll" [(ngModel)]="term" placeholder="search">
+        <input type="text" name="filter" class="search-input form-controll" placeholder="search">
         <button class="btn btn-default pull-right" (click)="isClassVisible = !isClassVisible">Zmień widok</button>
       </div>
     </div>
@@ -21,7 +21,7 @@
     <div [class.list-view]="isClassVisible">
 
       <ul class="herbList list-unstyled">
-        <li *ngFor="let herb of herbs | filter:term;
+        <li *ngFor="let herb of herbs
     let i = index" class="herbWrapper" (click)="onSelect(herb)" data-toggle="modal" data-target="#myModal" #myList>
           <img src={{herb.img}} class="herbImg img-responsive">
           <span class="herbName">
